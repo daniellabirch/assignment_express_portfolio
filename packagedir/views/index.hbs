@@ -1,0 +1,19 @@
+<h1>Projects</h1>
+
+{{#each projects as |project|}}
+  <div class="god">
+    <div class="god-name">
+      <a href="/project/{{project.name}}">
+         {{project.name}}
+       </a>
+    </div>
+
+    <div class="god-domains">
+      {{#each project.domains as |domain|}}
+        <div class="god-domain">
+          {{domain}}
+        </div>
+      {{/each}}
+    </div>
+  </div>
+{{/each}}
